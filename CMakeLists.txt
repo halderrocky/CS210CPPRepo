@@ -19,7 +19,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # ---------------------------------------------------------------------------
 
 add_executable(01_compile_model
-        01_compile_model/main.cpp)
+        01_compile_model/main.cpp
+        01_compile_model/shape_utility.cpp
+        01_compile_model/shape_utility.h)
 
 add_executable(02_header_cpp_split
         02_header_cpp_split/main.cpp

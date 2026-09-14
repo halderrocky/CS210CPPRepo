@@ -2,6 +2,7 @@
 
 Rectangle::Rectangle(double width, double height) {
     width_=width;
+    height_=height;
 
     // Old-school constructor body: assign the members one at a time,
     // like any other function. This works, but it's not the style

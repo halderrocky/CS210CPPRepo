@@ -21,6 +21,34 @@ int main() {
     std::cout << "After pop, top: " << s.top() << std::endl;
     std::cout << "Is empty? " << (s.isEmpty() ? "yes" : "no") << std::endl;
 
+    s.peek();
+    std::cout << "After peek, top: " << s.peek() << std::endl;
+    std::cout << "Is empty? " << (s.isEmpty() ? "yes" : "no") << std::endl;
+
+    int num;
+    num = s.pop();
+    std::cout  << "Popped value: " << num << std::endl;
+    std::cout  << "After pop, top: " << s.peek() << std::endl;
+    std::cout << "Is empty? " << (s.isEmpty() ? "yes" : "no") << std::endl;
+
+    num = s.peek();
+    std::cout << "After peek, top: " << s.peek() << std::endl;
+    std::cout << "Is empty? " << (s.isEmpty() ? "yes" : "no") << std::endl;
+
+    num = s.pop();
+    std::cout  << "Popped value: " << num << std::endl;
+    std::cout << "Is empty? " << (s.isEmpty() ? "yes" : "no") << std::endl;
+
+    // s.pop();
+    // s.peek();
+
+    for (int i = 0; i < 101; i++) {
+        num = (i + 1);
+        s.push(num);
+        std::cout  << "Pushed value: " << num << std::endl;
+        std::cout << "After push, top: " << s.peek() << std::endl;
+    }
+
     return 0;
 }
 
