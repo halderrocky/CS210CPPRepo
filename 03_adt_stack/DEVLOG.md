@@ -7,7 +7,8 @@
 I realized that TopIndex should start at -1 to indicate an empty stack. 
 In isEmpty(), I changed the condition from topIndex == 0 to topIndex == -1.
 In the isFull() condition, topIndex == MAX_SIZE; I changed MAX_SIZE to MAX_SIZE - 1.
-* What I would do differently:
+* What I would do differently: I would try to trace the values of TopIndex manually so that I can
+effortlessly program it.
 
 # Entry #2
 
@@ -17,7 +18,7 @@ In the isFull() condition, topIndex == MAX_SIZE; I changed MAX_SIZE to MAX_SIZE 
   topIndex first before adding an element. After that, I added an if
   statement to check if the stack is full.
 * Why: If the stack is full and if I push an element to it, it is out of the normal bounds.
-* What I would do differently: 
+* What I would do differently: I would try testing push() with both an empty stack (-1) and a full stack
 
 # Entry #3
 
@@ -26,4 +27,5 @@ In the isFull() condition, topIndex == MAX_SIZE; I changed MAX_SIZE to MAX_SIZE 
 * Decision made: I added the print statements that specifies the called function which
 the stack is full or empty. Then, I exited the program with error 'exit(1)'
 * Why: It's hard to return a regular integer that is a "sentinel value"
-* What I would do differently:
+* What I would do differently: I wouldn't mix exit(0) with exit(1). I would consistently use 
+exit(1) for error-handling.
